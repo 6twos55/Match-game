@@ -1,0 +1,298 @@
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.gamename{
+  margin : 2.5vh 0 1vh 0;
+  text-align: center;
+  font-size: 4.8vh;
+}
+.cover{
+  width: 50vw;
+  margin: 5vh 0 9vh 27.8vw;
+}
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7,
+.item8,
+.item9{
+  padding: 10vh;
+  border: 1px solid blue;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 3vh;
+  margin: 0.5vh;
+  width: 4vw;
+  transition: all 0.7s ease;
+  display: inline-block;
+}
+
+.item1:hover,
+.item2:hover,
+.item3:hover,
+.item4:hover,
+.item5:hover,
+.item6:hover,
+.item7:hover,
+.item8:hover,
+.item9:hover{
+  background-color: blue;
+  color: white;
+}
+
+.btnCover{
+  width: 17.9vw;
+  margin: 0 38.5vw;
+  display: flex;
+  background-color: #bdbdfb;
+  padding: 1vh 0vh 1vh 1vw;
+  border-radius: 5px;
+}
+.feed, .next{
+  border: none;
+  padding: 2vh;
+  background-color: blue;
+  color: white;
+  font-size: 3vh;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin-inline-end: 1vw;
+}
+.feed:hover, .next:hover{
+  background-color: #0303a1;
+}
+
+
+.rotate{
+  transform: rotateY(-180deg);
+}
+
+
+
+.disappear{
+  display: none;
+}
+.disable{
+  pointer-events: none;
+}
+
+
+.congratsCover{
+  padding: 10vh 8vh;
+  background-color: blue;
+  width: 25vw;
+  border-radius: 5px;
+  z-index: 1000;
+  position: absolute;
+  top: 20vh;
+  left: 32.8vw;
+}
+.congratsText, 
+.congratsEmoji{
+  text-align: center;
+  color: white;
+}
+.restart{
+  border: none;
+  padding: 1vh;
+  background-color: #dcdcf9;
+  color: blue;
+  font-size: 3vh;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin: 0 9.5vw;
+}
+.restart:hover{
+  background-color: #ffffff;
+}
+
+
+.hide{
+  visibility: hidden;
+  pointer-events: none;
+}
+
+
+
+@media screen and (min-width: 969px) and (max-width: 1190px){
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5,
+  .item6,
+  .item7,
+  .item8,
+  .item9{
+    padding: 8vh;
+  }
+}
+@media screen and (min-width: 743px) and (max-width: 968px){
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5,
+  .item6,
+  .item7,
+  .item8,
+  .item9{
+    padding: 6vh;
+  }
+}
+@media screen and (min-width: 519px) and (max-width: 742px){
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5,
+  .item6,
+  .item7,
+  .item8,
+  .item9{
+    padding: 4vh;
+    font-size: 2vh;
+  }
+  .infobox{
+    font-size: 3vh;
+  }
+  .lvlcount{
+    font-size: 4vh;
+  }
+  .gamename{
+    font-size: 4.5vh;
+    margin-top: 5vh;
+  }
+  .feed, .next{
+    font-size: 1.5vh;
+    padding: 1vh;
+  }
+}
+@media screen and (min-width: 408px) and (max-width: 518px){
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5,
+  .item6,
+  .item7,
+  .item8,
+  .item9{
+    padding: 3vh;
+    font-size: 1.5vh;
+  }
+  .infobox{
+    font-size: 2.5vh;
+  }
+  .lvlcount{
+    font-size: 3vh;
+  }
+  .gamename{
+    font-size: 4vh;
+    margin-top: 10vh;
+  }
+  .feed, .next{
+    font-size: 1.5vh;
+    padding: 1vh;
+  }
+}
+@media screen and (min-width: 231px) and (max-width: 407px){
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5,
+  .item6,
+  .item7,
+  .item8,
+  .item9{
+    padding: 2.5vh;
+    font-size: 1vh;
+  }
+  .infobox{
+    font-size: 2vh;
+  }
+  .lvlcount{
+    font-size: 3vh;
+  }
+  .gamename{
+    font-size: 3.5vh;
+    margin-top: 10vh;
+  }
+  .feed, .next{
+    font-size: 1.5vh;
+    padding: 1vh;
+  }
+  .cover{
+    width: 70vw;
+    margin-left: 10vw;
+  }
+}
+@media screen and (min-width: 231px) and (max-width: 407px){
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5,
+  .item6,
+  .item7,
+  .item8,
+  .item9{
+    padding: 2.5vh;
+    font-size: 1vh;
+  }
+  .infobox{
+    font-size: 2vh;
+  }
+  .lvlcount{
+    font-size: 3vh;
+  }
+  .gamename{
+    font-size: 3.5vh;
+    margin-top: 10vh;
+  }
+  .feed, .next{
+    font-size: 1.5vh;
+    padding: 1vh;
+  }
+  .cover{
+    width: 70vw;
+    margin-left: 10vw;
+  }
+} 
+@media screen and (min-width: 10px) and (max-width: 230px){
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5,
+  .item6,
+  .item7,
+  .item8,
+  .item9{
+    padding: 1.5vh;
+    font-size: 0.9vh;
+  }
+  .infobox{
+    font-size: 1.5vh;
+  }
+  .lvlcount{
+    font-size: 2vh;
+  }
+  .gamename{
+    font-size: 3.5vh;
+    margin-top: 20vh;
+  }
+  .feed, .next{
+    font-size: 1vh;
+    padding: 0.5vh;
+  }
+  .cover{
+    width: 100vw;
+    margin-left: 10vw;
+  }
+} 
